@@ -7,7 +7,7 @@ function formToApi(event) {
         message: document.getElementsByName('message')[0].value
     }
 
-    fetch( "https://agn2rvee20.execute-api.us-east-1.amazonaws.com/sendingStage/sending" , {
+    fetch( "${INVOKE_URL}" , {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
