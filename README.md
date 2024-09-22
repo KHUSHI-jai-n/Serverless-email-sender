@@ -18,9 +18,12 @@ This project is a comprehensive AWS application that demonstrates the integratio
 - Lambda
 - Step Functions
 - SES
+
 It provides a functional setup to send emails and manage requests via a REST API, all while remaining in the free tier.
 
 ## Architecture
+
+![diagram-export-9-22-2024-11_29_13-AM](https://github.com/user-attachments/assets/58c68f53-bbe1-4c7f-8113-c3375b561d93)
 
 ## How Lambda works
 AWS Lambda is a serverless compute service that allows you to run code without provisioning or managing servers. You can execute code in response to events such as changes in data or system state, making it ideal for building scalable applications.
