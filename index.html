@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email sender</title>
+    <script src="formToApi.js"></script>
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-image: url(forest.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .division {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .form {}
+
+        .email {
+            margin-top: 1rem;
+        }
+
+        h1 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 2.6rem;
+        }
+        .message-box {
+            margin-top: 5rem;
+        }
+        .btn {
+            margin-left: 1rem;
+            border-radius: 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: white;
+            font-size: 1rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+            background-color: #f9f9f9;
+        }
+
+        .email-input, .message-input {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 1rem;
+            border: 1px solid #ddd;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .email-input:focus {
+            outline: none;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+            border-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="form">
+        <div class="division">
+            <h1>Serverless email sending application in AWS</h1>
+            <div class="message-box">
+                <input class="message-input" type="text" name="message" placeholder="Enter message">
+            </div>
+            <div class="email-box">
+                <input class="email-input" name="email" type="email" placeholder="Enter email">
+                <br>
+                <button class="btn" onClick="formToApi(event)">Send an Email</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
