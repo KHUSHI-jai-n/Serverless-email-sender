@@ -1,0 +1,11 @@
+{
+  "Comment": "State machine for sending email",
+  "StartAt": "Send Email",
+  "States": {
+    "Send Email": {
+      "Type": "Task",
+      "Resource": "${EMAIL_LAMBDA_ARN}",
+      "End": true
+    }
+  }
+}
